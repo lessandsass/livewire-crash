@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Task;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class TaskSeeder extends Seeder
 {
@@ -18,16 +19,11 @@ class TaskSeeder extends Seeder
                 'name' => 'Task 2',
                 'user_id' => 1,
             ],
-            [
-                'name' => 'Task 3',
-                'user_id' => 1,
-            ],
         ];
 
         foreach ($tasks as $task) {
-            \App\Models\Task::create($task);
+            Task::insert($task);
         }
 
-        // \App\Models\User::factory(10)->create();
     }
 }
