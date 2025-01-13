@@ -8,6 +8,6 @@ class TaskCreate extends Component
 {
     public function render()
     {
-        return view('livewire.tasks.task-create');
+        return view('livewire.tasks.task-create')->title('Create  - Vipu Livewire');
     }
 }
