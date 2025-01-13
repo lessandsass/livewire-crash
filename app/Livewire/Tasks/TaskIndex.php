@@ -3,9 +3,6 @@
 namespace App\Livewire\Tasks;
 
 use Livewire\Component;
-use Livewire\Attributes\Title;
-
-#[Title('Tasks - Vipu Livewire')]
 
 class TaskIndex extends Component
 {
