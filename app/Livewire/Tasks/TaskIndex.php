@@ -8,6 +8,6 @@ class TaskIndex extends Component
 {
     public function render()
     {
-        return view('livewire.tasks.task-index')->layout('layouts.app');
+        return view('livewire.tasks.task-index');
     }
 }
